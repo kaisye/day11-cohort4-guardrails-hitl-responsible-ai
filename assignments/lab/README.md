@@ -18,7 +18,7 @@ User input
   ├─ Lớp 3: Injection Detection  → 403   (Regex → LLM Guard)   [FAIL-CLOSED]
   ├─ Lớp 4: Topic Filter         → từ chối lịch sự (LLM)       [FAIL-OPEN]
   │
-  └─ Main LLM: HR Assistant (gemini-2.5-flash)
+  └─ Main LLM: HR Assistant (gemini-3.1-flash-lite)
 ```
 
 Request bị chặn ở lớp nào thì **dừng ngay tại lớp đó**, không chạy các lớp sau.

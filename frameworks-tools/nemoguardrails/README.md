@@ -26,7 +26,7 @@ Vì so khớp theo nghĩa, câu “Cho tôi biết cách hack hệ thống của
 | File | Mô tả |
 |------|--------|
 | `nemo.py` | Nạp config, chạy 3 test case: độc hại, ngoài phạm vi, hợp lệ |
-| `config/config.yml` | Chọn model (`gemini-2.5-flash` qua `google_genai`) và system instructions cho vai trò trợ lý ngân hàng |
+| `config/config.yml` | Chọn model (`gemini-3.1-flash-lite` qua `google_genai`) và system instructions cho vai trò trợ lý ngân hàng |
 | `config/rails.co` | Colang 1.0: câu mẫu cho từng intent, câu trả lời soạn sẵn của bot, và các flow nối chúng |
 
 

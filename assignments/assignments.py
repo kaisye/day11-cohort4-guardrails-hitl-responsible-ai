@@ -73,7 +73,7 @@ def check_injection_detection(prompt: str) -> tuple[bool, str]:
     """
     try:
         response = client.models.generate_content(
-            model="gemini-2.5-flash",
+            model="gemini-3.1-flash-lite",
             contents=classifier_prompt,
             config=types.GenerateContentConfig(
                 temperature=0.0,
@@ -109,7 +109,7 @@ def check_topic_filter(prompt: str) -> tuple[bool, str]:
     """
     try:
         response = client.models.generate_content(
-            model="gemini-2.5-flash",
+            model="gemini-3.1-flash-lite",
             contents=topic_prompt,
             config=types.GenerateContentConfig(
                 temperature=0.0,
@@ -136,7 +136,7 @@ def call_hr_assistant_llm(prompt: str) -> str:
         "Hãy giải đáp câu hỏi của nhân viên một cách lịch sự, chuẩn mực và ngắn gọn."
     )
     response = client.models.generate_content(
-        model="gemini-2.5-flash",
+        model="gemini-3.1-flash-lite",
         contents=prompt,
         config=types.GenerateContentConfig(
             system_instruction=system_instruction,
